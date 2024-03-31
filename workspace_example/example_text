@@ -1,0 +1,36 @@
+f = open('example.txt', 'r+')
+
+# print("\Example 2: ")
+# for line in f:
+#     print("The first character of each line is: " + line[0] + "\n")
+#     print("The entire line is: " + line)
+
+# f.close()
+
+# print("\Example 3: ")
+
+# contents = ""
+# with open('example.txt', 'r+') as f:
+#     for line in f:
+#         contents = contents + line
+# print(contents)
+
+# print("\Example 4: ")
+
+# f = open('example.txt', 'r+', encoding='utf-8')
+# newContents = f.read()
+# print(newContents)
+
+# f.close()
+
+# with open ('example.txt', 'r') as file:
+#     lines = file.readlines()
+# print(lines)
+
+# with open ('example.txt', 'r', encoding='utf-8') as file:
+#     lines = file.readlines()
+# print(lines)
+
+with open('example.txt', 'r', encoding='utf-8-sig') as file:
+    lines = file.readlines()
+print(lines)
